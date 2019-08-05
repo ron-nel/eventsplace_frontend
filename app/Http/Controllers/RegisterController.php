@@ -18,7 +18,7 @@ class RegisterController extends Controller
     public function submitregister(Request $request){
         // dd($request);
         $client = new Client;
-        $response = $client->post("localhost:4000/admin/register",[
+        $response = $client->post("https://frozen-island-10337.herokuapp.com/admin/register",[
 
             "json" => [
                 "name" => $request->name,
@@ -39,12 +39,12 @@ class RegisterController extends Controller
 
     // public function showUser(){
     //     $client = new Client;
-    //     $response = $client->get("localhost:4000/admin/user");
+    //     $response = $client->get("https://frozen-island-10337.herokuapp.com/admin/user");
     //     $result=json_decode($response->getBody());
     //     $posts = $result->result;
 
         
-    //     $resp = $client->get("localhost:4000/admin/showComments");
+    //     $resp = $client->get("https://frozen-island-10337.herokuapp.com/admin/showComments");
     //     $results=json_decode($resp->getBody());
     //     $comments = $results->result;
     
@@ -59,7 +59,7 @@ class RegisterController extends Controller
     public function login(Request $request){
         $client = new Client;
 
-        $response = $client->post("localhost:4000/admin/login",[
+        $response = $client->post("https://frozen-island-10337.herokuapp.com/admin/login",[
             "json" => [
                 "email" => $request->email,
                 "password" => $request->password
