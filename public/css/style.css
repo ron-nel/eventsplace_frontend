@@ -1,0 +1,71 @@
+body {
+	position: relative;
+	min-height: 100vh;
+}
+
+footer {
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+
+}
+
+.row{
+	margin: 0,
+	padding: 0;
+}
+
+.section{
+	min-height: 100vh;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.homePage{
+	background-image: url('../images/pageImages/2_eventbrite-99d_JPG.jpg');
+	background-size: cover; 
+}
+
+.homePage2{
+	background-image: url('../images/pageImages/2_eventbrite-99d_JPG.jpg');
+	background-repeat: repeat;
+}
+
+.btn1{
+	background-color: #ff5959;
+}
+
+.btn2{
+	background-color: #1b7fbd;
+}
+
+.btn3{
+	background-color: #e8e8e8;
+}
+
+.navBar{
+	height: 3.3rem;
+}
+
+.footerHeight{
+	height: 1rem;
+}
+
+.content-holder{
+	background-color: rgba(220, 220, 220, 0.97);
+}
+
+.site-logo{
+	height: 3rem;
+	width: 3rem;
+}
+
+.message{
+	/*position: fixed;*/
+	/*top: 50%;*/
+	/*left: 50%;*/
+	color: white;
+	background-color: #1b7fbd;
+	/*z-index: 1000;*/
+	
+}
